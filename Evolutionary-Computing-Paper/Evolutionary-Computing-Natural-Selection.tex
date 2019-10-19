@@ -1,7 +1,7 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
-%\usepackage{cite}
+\usepackage{cite}
 
 \usepackage{amsmath,amssymb,amsfonts}
 %\usepackage{algorithm}
@@ -29,7 +29,7 @@
   commentstyle=\color{purple}\ttfamily,
   stringstyle=\color{red}\ttfamily,
   morestring=[b]',
-  morestring=[b]"
+  morestring=[b]
 }
 \lstset{
    language=JavaScript,
@@ -280,6 +280,45 @@ Some organisms with lower food detection radius but higher poison detection radi
 \end{figure}
 
 \section{Conclusion and Future work}
-The organisms natural selection in its environment is completely analogous to fitness function based algorithm; hence approach is viable. Selection and reproducing system results in similar looking genotypes and phenotypes with gradual variation over long-term evolution. This also makes clear that certain operations at low-level can obstruct and limit the evolution(birth \& mutation rate). Once an organism has evolved, it can sustain itself for a period of time. We can implement crossover and mutation between two parent organisms when they are in certain proximity of each other. We can make organisms with gender. Can we create a scenario in which organism learn to cooperate with each other; can revive a dying organism.
-Working
+The organisms natural selection in its environment is completely analogous to fitness function based algorithm; hence approach is viable. Selection and reproducing system results in similar looking genotypes and phenotypes with gradual variation over long-term evolution. This also makes clear that certain operations at low-level can obstruct and limit the evolution(birth \& mutation rate). Once an organism has evolved, it can sustain itself for a period of time. We can implement crossover and mutation between two parent organisms when they are in certain proximity of each other. We can make organisms with gender. Can we create a scenario in which organism learn to cooperate with each other; can revive a dying organism.\cite{algorithms-and-experiments}
+
+\begin{thebibliography}{9}
+\bibitem{channon&damper} 
+Channon, Alastair D., and R. I. Damper. "Evolving novel behaviors via natural selection." (1998): 384-388.
+ 
+\bibitem{Stanley} 
+Stanley, Kenneth O., and Risto Miikkulainen. "Evolving neural networks through augmenting topologies." Evolutionary computation 10.2 (2002): 99-127.
+ 
+\bibitem{algorithms-and-experiments} 
+Rodzin, Sergey, Olga Rodzina, and Lada Rodzina. "Neuroevolution: problems, algorithms, and experiments." 2016 IEEE 10th International Conference on Application of Information and Communication Technologies (AICT). IEEE, 2016.
+
+\bibitem{feature-selection}
+Xue, Bing, et al. "A survey on evolutionary computation approaches to feature selection." IEEE Transactions on Evolutionary Computation 20.4 (2015): 606-626.
+
+\bibitem{evolvable-machines}
+Ryerkerk, Matt, et al. "A survey of evolutionary algorithms using metameric representations." Genetic Programming and Evolvable Machines (2019): 1-38.
+
+\bibitem{swarm-evolutionary-computing}
+Darwish, Ashraf, Aboul Ella Hassanien, and Swagatam Das. "A survey of swarm and evolutionary computing approaches for deep learning." Artificial Intelligence Review (2019): 1-46.
+
+\bibitem{improving-neuroevolution}
+Maul, Tomás H. "Improving Neuroevolution with Complementarity-Based Selection Operators." Neural Processing Letters 44.3 (2016): 887-911.
+
+\bibitem{online-neuroevolution}
+Agogino, Adrian, Kenneth Stanley, and Risto Miikkulainen. "Online interactive neuro-evolution." Neural Processing Letters 11.1 (2000): 29-38.
+
+\bibitem{soccer-game-evolution}
+Sugisaka, Masanori, Xiaoshu Wang, and Ju-Jang Lee. "Genetic algorithms (GAs) to evolve multiple-agent cooperative systems." Artificial Life and Robotics 3.3 (1999): 139-142.
+
+\bibitem{mapping-genotype-phenotype}
+Ekárt, Anikó, and Peter R. Lewis. "Genotype–phenotype mapping implications for genetic programming representation: Commentary on “On the mapping of genotype to phenotype in evolutionary algorithms” by Peter A. Whigham, Grant Dick, and James Maclaurin." Genetic Programming and Evolvable Machines 18.3 (2017): 369-372.
+
+\bibitem{array-selection}
+Mohamad, Mohd Saberi, et al. "Gene subset selection using an iterative approach based on genetic algorithms." Artificial Life and Robotics 14.1 (2009): 12-15.
+
+\bibitem{GA-and-machine-learning}
+Goldberg, David E., and John H. Holland. "Genetic algorithms and machine learning." Machine learning 3.2 (1988): 95-99.
+
+
+\end{thebibliography}
 \end{document}
