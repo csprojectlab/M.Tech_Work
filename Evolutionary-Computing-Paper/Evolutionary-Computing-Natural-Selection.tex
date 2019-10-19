@@ -2,6 +2,7 @@
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
+%\usepackage{algpseudocode}
 
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithm}
@@ -151,37 +152,44 @@ So far we have an organism that moves across the window and code that manages va
 \item \textbf{Organisms are born}
 \end{itemize}
 Organism dying acts as a replacement for fitness function. If organism dies, it no longer exits and cannot be selected to be parent! To ensure deaths in world we add health variable to Organism class(listing 1). An organism gets 100 health points when born. In each iteration of loop(animation) organism loses some health.
-\begin{lstlisting}[caption = Updating death variable]
-void update() {
-	this.health -= 1;
-}
-\end{lstlisting}
+
+\begin{algorithm}
+\caption{Updating death variable}
+\begin{algorithmic} 
+\STATE {$health\gets health\ -\ 1$}
+\end{algorithmic}
+\end{algorithm}
+
 If organism health drops down to 0, it dies.
-\begin{lstlisting}[caption = Function in organism class to test if dead or not]
-boolean dead() {
-	if (health < 0.0) 
-		return true;	
-	return false;
-}
-\end{lstlisting}
+
+\begin{algorithm}
+\caption{Function to test if organism dead or not}
+\begin{algorithmic} 
+\IF {$health\leq 0.0$}
+\STATE {$return\ \textbf{true}$}
+\ELSE
+\STATE {$return\ \textbf{false}$}
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
+
 Perhaps you are thinking that all organisms start with 100 points and loses 1 point per iteration, then all will live for same amount of time and then die together. If this happens then there will be nothing to evolve. Hence we introduce food and poison. Organisms life is extended when it eats food as this increases its health points.\\
 let's assume \textit{food}(and \textit{poison}) as list of vector co-ordinates of food(and poison). If food(or poison) lies in proximity, it eats food(or poison) and increase(or decrease) its health.
-\begin{lstlisting}[caption = Eating food and poison]
-void eatFood() {
-	for (let i = food.size() - 1; i >= 0; i--) {
-		let food_location = food.get(i);
-		let	distance = dist(food_location, this.location);
-		if (distance < this.dna[2]) {		// Food sensing gene
-			health += 100;
-			food.remove(i);
-		}
-	}
-}
-void eatPoison() {
-	// Same as above. Just subtract health. Use dna[3]
-	....
-}
-\end{lstlisting}
+
+\begin{algorithm}
+\caption{Function to eat food}
+\begin{algorithmic} 
+\STATE {$i\gets size\ of\ food\ list$}
+\FOR {$i\geq 0$}
+\STATE {$food\_location\gets food[i]$}
+\STATE {$dist\gets distance(food\_location,\ organism\_location)$}
+\IF {$dist\leq dna[2]$}
+\STATE {$health\gets health\ +\ 100$}
+\STATE {$food\ list \xleftarrow{\text{remove}} food\_location$}
+\ENDIF
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
 In this scenario organisms can eat food to live longer and have likelihood to reproduce. The system will evolve organisms with ability to find and eat food.
 
 \section{Genotype and Phenotype}
@@ -205,15 +213,17 @@ Organisms with higher sensing power find food more often and one with higher att
 	\label{fig:phenotype}
 \end{figure}
 \\Figure 3 shows organism is represented in a triangular shape, and DNA phenotype is the circles around it. The two circles tend to locate food and poison and attraction/repulsion power is represented by stroke of circles. The more the stroke the more it tends to move towards the food or poison. Stroke is just mapping of steering force(attractive or repulsive) to circle outline width.
-\begin{lstlisting}[caption = Adding Phenotype in Organism class]
-void display() {
-	// Draw the triangle..
-	// Set stroke using a mapping function on dna[0] for food
-	// Set stroke using a mapping function on dna[1] for poison
-	// Draw food cicle using dna[2]
-	// Draw poison circle using dna[3]
-}
-\end{lstlisting}
+
+\begin{algorithm}
+\caption{Display function}
+\begin{algorithmic} 
+\STATE {$Draw\ the\ triangle$}
+\STATE {$Set\ stroke\ using\ mapping\ function\ on\ dna[0]\ for\ food$}
+\STATE {$Set\ stroke\ using\ mapping\ function\ on\ dna[1]\ for\ poison$}
+\STATE {$Draw\ food\ circle\ using\ dna[2]$}
+\STATE {$Draw\ poison\ circle\ using\ dna[3]$}
+\end{algorithmic}
+\end{algorithm}
 
 \section{Selection and Reproduction}
 \subsection{Selection}
@@ -224,15 +234,20 @@ Other possibility would be to have \textit{asexual} reproduction. An organism wi
 The longer an organism lives, the more chance is there that it make atleast one child. Selection algorithm can be implemented by writing function in Organism class that harvest a random number every iteration(animation frame). If picked number is lesser than 0.01(1\%), a new organism is born.
 \subsection{Reproduction}
 How does an organism reproduce? The reproduction process will involve a function in Organism class that will make a new organism object from newly made DNA. Since single parent is making a child, we call a \textit{copy} function instead. It copies the content of one array into the another.
-\begin{lstlisting}[caption=Function returning new organism: the child]
-Organism reproduce() {
-	if(random(1) < 0.005) {
-		let child_dna = copy();  // Make copy of dna	
-		mutate(child_dna, 0.01);
-		return new Organism(location, child_dna);
-	} else return null;
-}
-\end{lstlisting}
+
+\begin{algorithm}
+\caption{Reproduce function returning new organism: the child}
+\begin{algorithmic} 
+\IF {$random(1)\leq 0.005$}
+\STATE {$child\_dna\gets Make\ a\ copy\ of\ dna$}
+\STATE {$child\_dna\gets mutate(child\_dna,\ 0.01)$}
+\STATE {$child\gets new\ Organism(location,\ child\_dna)$}
+\STATE {$return\ \textbf{child}$}
+\ELSE
+\STATE {$return\ \textbf{null}$}
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
 The child is born at same location as that of parent. Also note we've reduced reproduction probability from 1\% to 0.5\%. This makes a huge variation; with greater probability the ALife will rapidly move in direction of overpopulation. A lower probability, and everything will die out quickly. Once child DNA is created we put in the final process before adding it to the next generation-\textit{mutation}. It exist because of principle of variation. It permits to introduce diversity through evolutionary process itself \cite{Stanley}.\\
 Mutation is expressed in terms of mutation rate. Genetic algorithm might have 1\% or 0.5\% etc. as mutation rate. A mutation rate of 1\% means that there is 1\% chance that it will mutate the gene. What does it mean to mutate? In this case, mutation means adding some random value to the gene. This random value could be positive or negative depending on the constraint described.\\
 %%===========================MUTATION===========================

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  19 OCT 2019 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  19 OCT 2019 16:11
 entering extended mode
 **./Evolutionary-Computing-Natural-Selection.tex
 (Evolutionary-Computing-Natural-Selection.tex
@@ -439,25 +439,25 @@ Package: listings 2019/02/27 1.8b (Carsten Heinz)
 (Evolutionary-Computing-Natural-Selection.aux)
 \openout1 = `Evolutionary-Computing-Natural-Selection.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    ... okay on input line 52.
 
 -- Lines per column: 56 (exact).
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii"
@@ -527,7 +527,7 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count127
 
-Underfull \hbox (badness 5862) in paragraph at lines 81--82
+Underfull \hbox (badness 5862) in paragraph at lines 82--83
 []\OT1/ptm/m/n/10 Evolutionary Com-put-ing(EC) [5] is and al-go-rith-mic
  []
 
@@ -538,22 +538,22 @@ Underfull \hbox (badness 5862) in paragraph at lines 81--82
 <genotype.png, id=9, 234.27525pt x 299.31825pt>
 File: genotype.png Graphic file (type png)
 <use genotype.png>
-Package pdftex.def Info: genotype.png  used on input line 118.
+Package pdftex.def Info: genotype.png  used on input line 119.
 (pdftex.def)             Requested size: 234.27467pt x 299.31752pt.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 127.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 128.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <8> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 128.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 129.
  [2 <./genotype.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 139.
+LaTeX Font Info:    Try loading font information for U+msa on input line 140.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 139.
+LaTeX Font Info:    Try loading font information for U+msb on input line 140.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -561,34 +561,40 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <genotype-and-phenotype.png, id=15, 233.673pt x 92.7465pt>
 File: genotype-and-phenotype.png Graphic file (type png)
 <use genotype-and-phenotype.png>
-Package pdftex.def Info: genotype-and-phenotype.png  used on input line 197.
+Package pdftex.def Info: genotype-and-phenotype.png  used on input line 205.
 (pdftex.def)             Requested size: 233.67242pt x 92.74628pt.
 <phenotype.png, id=16, 276.43275pt x 337.86224pt>
 File: phenotype.png Graphic file (type png)
 <use phenotype.png>
-Package pdftex.def Info: phenotype.png  used on input line 203.
+Package pdftex.def Info: phenotype.png  used on input line 211.
 (pdftex.def)             Requested size: 199.17484pt x 199.16685pt.
- [3 <./genotype-and-phenotype.png>]
+
+Overfull \hbox (5.48055pt too wide) in paragraph at lines 222--223
+[] []$\OML/cmm/m/it/10 Set stroke using mapping function on dna\OT1/cmr/m/n/10 
+[1] \OML/cmm/m/it/10 for poison$ 
+ []
+
+[3 <./genotype-and-phenotype.png>]
 <mutation.png, id=24, 229.45724pt x 214.401pt>
 File: mutation.png Graphic file (type png)
 <use mutation.png>
-Package pdftex.def Info: mutation.png  used on input line 240.
+Package pdftex.def Info: mutation.png  used on input line 255.
 (pdftex.def)             Requested size: 229.45667pt x 214.40047pt.
  [4 <./phenotype.png> <./mutation.png>]
 <ecosystem.png, id=28, 770.88pt x 549.55313pt>
 File: ecosystem.png Graphic file (type png)
 <use ecosystem.png>
-Package pdftex.def Info: ecosystem.png  used on input line 277.
+Package pdftex.def Info: ecosystem.png  used on input line 292.
 (pdftex.def)             Requested size: 253.61485pt x 180.79965pt.
 
-Overfull \hbox (1.61485pt too wide) in paragraph at lines 277--278
+Overfull \hbox (1.61485pt too wide) in paragraph at lines 292--293
 [][] 
  []
 
 <birth-and-death.png, id=30, 452.4403pt x 313.17pt>
 File: birth-and-death.png Graphic file (type png)
 <use birth-and-death.png>
-Package pdftex.def Info: birth-and-death.png  used on input line 290.
+Package pdftex.def Info: birth-and-death.png  used on input line 305.
 (pdftex.def)             Requested size: 248.84294pt x 172.24402pt.
 [5 <./ecosystem.png> <./birth-and-death.png>]
 
@@ -606,13 +612,13 @@ Before submitting the final camera ready copy, remember to:
 
 ] (Evolutionary-Computing-Natural-Selection.aux) ) 
 Here is how much of TeX's memory you used:
- 6253 strings out of 492973
- 88136 string characters out of 3135941
- 245282 words of memory out of 3000000
- 10034 multiletter control sequences out of 15000+200000
+ 6237 strings out of 492973
+ 87951 string characters out of 3135941
+ 186282 words of memory out of 3000000
+ 10018 multiletter control sequences out of 15000+200000
  39233 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,40p,1040b,1514s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,14n,40p,1040b,1140s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/
 fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
@@ -623,7 +629,7 @@ TeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
 mbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Evolutionary-Computing-Natural-Selection.pdf (6 pages, 406970
+Output written on Evolutionary-Computing-Natural-Selection.pdf (6 pages, 408027
  bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
