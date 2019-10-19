@@ -257,18 +257,22 @@ Mutation is expressed in terms of mutation rate. Genetic algorithm might have 1\
 	\label{fig:mutation}
 \end{figure}
 The process is shown in Figure \ref{fig:mutation}. The behavior of system is greatly affected by mutation rate. Obviously, higher mutation rate say 80\% would nullify the evolutionary process. If major parts of gene are generated randomly, we can't assure that "fit" genes occur with greater frequency. Following algorithm mutate child's genes based on mutation probability.
-\begin{lstlisting}[caption=Mutating genes array based on mutation rate]
-void mutate(genes, mutation_rate) {
-	for (let i = 0; i < 4; i++) {
-		if(random(1) < mutation_rate) {
-			if(i < 2)  // Attraction/Repulsion
-				genes[i] = genes[i] + random(-0.2, 0.2);
-			else 	// sensing radius
-				genes[i] = genes[i] + random(-10, 10);
-		}
-	}
-}
-\end{lstlisting}
+
+\begin{algorithm}
+\caption{Mutate function mutating genes array based on mutation rate}
+\begin{algorithmic} 
+\FOR {$i\gets 0\ to\ 3$}
+\IF {$random(1)\leq mutation\_rate$}
+\IF {$i\ <\ 2$}
+\STATE {$genes[i]\gets genes[i]\ +\ random(-0.2, 0.2)$}
+\ELSE
+\STATE {$genes[i]\gets genes[i]\ +\ random(-10, 10)$}
+\ENDIF
+\ENDIF
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+
 \section{Experimental World}
 Now we have all pieces in place to validate the above. A two dimensional world of artificial organisms is created and each organism is controlled by network using the described development system. Evolution is governed by natural selection. No universal rule exist to delete organisms; this is under their own control. Each organism has a facing direction which is set randomly at birth. Sharp points indicate their direction. Figure \ref{fig:ecosystem} shows organisms with dominant radius are more fit(green) as compared to the ones with smaller search radius. Putting entire system together in Algorithm 1.
 \begin{algorithm}
