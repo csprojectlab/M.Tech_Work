@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  19 OCT 2019 10:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  19 OCT 2019 10:21
 entering extended mode
 **./Evolutionary-Computing-Natural-Selection.tex
 (Evolutionary-Computing-Natural-Selection.tex
@@ -185,13 +185,41 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count107
+\float@exts=\toks20
+\float@box=\box30
+\@float@everytoks=\toks21
+\@floatcapt=\box31
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks22
+\c@algorithm=\count108
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks20
+\KV@toks@=\toks23
 )
+\c@ALC@unique=\count109
+\c@ALC@line=\count110
+\c@ALC@rem=\count111
+\c@ALC@depth=\count112
+\ALC@tlm=\skip47
+\algorithmicindent=\skip48
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
@@ -384,24 +412,24 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count107
-\lst@gtempboxa=\box30
-\lst@token=\toks21
-\lst@length=\count108
+\lst@mode=\count113
+\lst@gtempboxa=\box32
+\lst@token=\toks24
+\lst@length=\count114
 \lst@currlwidth=\dimen137
-\lst@column=\count109
-\lst@pos=\count110
+\lst@column=\count115
+\lst@pos=\count116
 \lst@lostspace=\dimen138
 \lst@width=\dimen139
-\lst@newlines=\count111
-\lst@lineno=\count112
+\lst@newlines=\count117
+\lst@lineno=\count118
 \lst@maxwidth=\dimen140
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count113
-\lst@skipnumbers=\count114
-\lst@framebox=\box31
+\c@lstnumber=\count119
+\lst@skipnumbers=\count120
+\lst@framebox=\box33
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2019/02/27 1.8b listings configuration
@@ -434,17 +462,17 @@ LaTeX Font Info:    ... okay on input line 51.
 -- Lines per column: 56 (exact).
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
+\scratchcounter=\count121
 \scratchdimen=\dimen141
-\scratchbox=\box32
-\nofMPsegments=\count116
-\nofMParguments=\count117
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count118
+\scratchbox=\box34
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count124
 \MPscratchDim=\dimen142
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks26
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -497,7 +525,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count121
+\c@lstlisting=\count127
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 69.
 LaTeX Font Info:    Try loading font information for U+msa on input line 69.
 
@@ -542,26 +570,26 @@ File: mutation.png Graphic file (type png)
 <use mutation.png>
 Package pdftex.def Info: mutation.png  used on input line 234.
 (pdftex.def)             Requested size: 229.45667pt x 214.40047pt.
+<ecosystem.png, id=22, 770.88pt x 549.55313pt>
+File: ecosystem.png Graphic file (type png)
+<use ecosystem.png>
+Package pdftex.def Info: ecosystem.png  used on input line 271.
+(pdftex.def)             Requested size: 253.61485pt x 180.79965pt.
+
+Overfull \hbox (1.61485pt too wide) in paragraph at lines 271--272
+[][] 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <./phenotype.png> <./mutation.png>]
-<ecosystem.png, id=25, 770.88pt x 549.55313pt>
-File: ecosystem.png Graphic file (type png)
-<use ecosystem.png>
-Package pdftex.def Info: ecosystem.png  used on input line 264.
-(pdftex.def)             Requested size: 253.61485pt x 180.79965pt.
-
-Overfull \hbox (1.61485pt too wide) in paragraph at lines 264--265
-[][] 
- []
-
 <birth-and-death.png, id=27, 452.4403pt x 313.17pt>
 File: birth-and-death.png Graphic file (type png)
 <use birth-and-death.png>
-Package pdftex.def Info: birth-and-death.png  used on input line 277.
+Package pdftex.def Info: birth-and-death.png  used on input line 284.
 (pdftex.def)             Requested size: 248.84294pt x 172.24402pt.
-[5 <./ecosystem.png> <./birth-and-death.png>]
+ [5 <./ecosystem.png> <./birth-and-death.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -577,10 +605,10 @@ Before submitting the final camera ready copy, remember to:
 
 ] (Evolutionary-Computing-Natural-Selection.aux) ) 
 Here is how much of TeX's memory you used:
- 6026 strings out of 492973
- 85349 string characters out of 3135941
- 262790 words of memory out of 3000000
- 9817 multiletter control sequences out of 15000+200000
+ 6285 strings out of 492973
+ 88583 string characters out of 3135941
+ 267282 words of memory out of 3000000
+ 10062 multiletter control sequences out of 15000+200000
  43487 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,40p,941b,1140s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -592,7 +620,7 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program
 /fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on Evolutionary-Computing-Natural-Selection.pdf (6 pages, 379310
+Output written on Evolutionary-Computing-Natural-Selection.pdf (6 pages, 377960
  bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)

@@ -4,8 +4,8 @@
 \usepackage{cite}
 
 \usepackage{amsmath,amssymb,amsfonts}
-%\usepackage{algorithm}
-%\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
@@ -249,16 +249,23 @@ void mutate(genes, mutation_rate) {
 }
 \end{lstlisting}
 \section{Experimental World}
-Now we have all pieces in place to validate the above. A two dimensional world of artificial organisms is created and each organism is controlled by network using the described development system. Evolution is governed by natural selection. No universal rule exist to delete organisms; this is under their own control. Each organism has a facing direction which is set randomly at birth. Sharp points indicate their direction. Figure \ref{fig:ecosystem} shows organisms with dominant radius are more fit(green) as compared to the ones with smaller search radius. Putting entire system together in listing 9.
-\begin{lstlisting}[caption=Genetic Algorithm: Evolving ecosystem]
-Step 1: Initialize. Generate population of N organisms with random DNA.
-Step 2: Loop
-			Step 2.a: Update organisms location
-			Step 2.b: Call eatFood and eatPoison procedure
-			Step 2.c: Call reproduce procedure for current organism
-			Step 2.d: Add born child to population
-		end
-\end{lstlisting}
+Now we have all pieces in place to validate the above. A two dimensional world of artificial organisms is created and each organism is controlled by network using the described development system. Evolution is governed by natural selection. No universal rule exist to delete organisms; this is under their own control. Each organism has a facing direction which is set randomly at birth. Sharp points indicate their direction. Figure \ref{fig:ecosystem} shows organisms with dominant radius are more fit(green) as compared to the ones with smaller search radius. Putting entire system together in Algorithm 1.
+\begin{algorithm}
+\caption{Genetic Algorithm: Evolving Ecosystem}
+\begin{algorithmic} 
+\STATE \textbf{Initialize:} Generate population of N organisms with random DNA.
+\LOOP
+\FOR{\textit{each alive organism}}                    
+\STATE Update organism position vectors.
+\STATE Call eatFood and eatPoison procedures.
+\STATE Call reproduce procedure for current organism.
+\IF{\textit{child is born}}
+\STATE Add born child to population.
+\ENDIF
+\ENDFOR
+\ENDLOOP
+\end{algorithmic}
+\end{algorithm}
 %%===========================WORLD===========================
 \begin{figure}
 	\includegraphics[scale=0.329]{ecosystem.png}
@@ -280,7 +287,7 @@ Some organisms with lower food detection radius but higher poison detection radi
 \end{figure}
 
 \section{Conclusion and Future work}
-The organisms natural selection in its environment is completely analogous to fitness function based algorithm; hence approach is viable. Selection and reproducing system results in similar looking genotypes and phenotypes with gradual variation over long-term evolution. This also makes clear that certain operations at low-level can obstruct and limit the evolution(birth \& mutation rate). Once an organism has evolved, it can sustain itself for a period of time. We can implement crossover and mutation between two parent organisms when they are in certain proximity of each other. We can make organisms with gender. Can we create a scenario in which organism learn to cooperate with each other; can revive a dying organism.\cite{algorithms-and-experiments}
+The organisms natural selection in its environment is completely analogous to fitness function based algorithm; hence approach is viable. Selection and reproducing system results in similar looking genotypes and phenotypes with gradual variation over long-term evolution. This also makes clear that certain operations at low-level can obstruct and limit the evolution(birth \& mutation rate). Once an organism has evolved, it can sustain itself for a period of time. We can implement crossover and mutation between two parent organisms when they are in certain proximity of each other. We can make organisms with gender. Can we create a scenario in which organism learn to cooperate with each other; can revive a dying organism.
 
 \begin{thebibliography}{9}
 \bibitem{channon&damper} 
