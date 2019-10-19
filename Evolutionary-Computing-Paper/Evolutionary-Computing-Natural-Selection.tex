@@ -132,13 +132,19 @@ class Organism {
 }
 \end{lstlisting}
 We will store the population of organisms in a list(not in array) as we expect population to grow and shrink as how often organisms die or are born. We initialize the elements of list as organisms.
-\begin{lstlisting}[caption = Making initial population of organisms]
-let world_population = 500;
-list<Organism> population;
-for (let i = 0; i < world_population; i++) {
-	population.add(new Organism());
-}
-\end{lstlisting}
+
+\begin{algorithm}
+\caption{Making initial population of organisms}
+\begin{algorithmic} 
+\STATE $world\_population\gets 500$
+\STATE $population\gets list\ of\ organisms$
+\FOR{$i \gets 1$ to $world\_population$}                    
+\STATE {$organism\gets create\ new\ Organism\ object$}
+\STATE {$population\xleftarrow{\text{add}} organism$}
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+
 So far we have an organism that moves across the window and code that manages variable number of organisms. To make it into a system that evolves, we add features to our world:
 \begin{itemize}
 \item \textbf{Organism die}
