@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  19 OCT 2019 10:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  19 OCT 2019 10:39
 entering extended mode
 **./Evolutionary-Computing-Natural-Selection.tex
 (Evolutionary-Computing-Natural-Selection.tex
@@ -536,7 +536,12 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/Users/hp/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+)
+Underfull \hbox (badness 5862) in paragraph at lines 81--82
+[]\OT1/ptm/m/n/10 Evolutionary Com-put-ing(EC) [5] is and al-go-rith-mic
+ []
+
+[1{C:/Users/hp/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
@@ -611,7 +616,7 @@ Here is how much of TeX's memory you used:
  10062 multiletter control sequences out of 15000+200000
  43487 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,40p,941b,1140s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,40p,1040b,1140s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/
 fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.
@@ -620,7 +625,7 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program
 /fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on Evolutionary-Computing-Natural-Selection.pdf (6 pages, 377960
+Output written on Evolutionary-Computing-Natural-Selection.pdf (6 pages, 377972
  bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
