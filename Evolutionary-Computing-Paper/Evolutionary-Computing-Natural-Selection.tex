@@ -151,14 +151,7 @@ So far we have an organism that moves across the window and code that manages va
 \item \textbf{Organism die}
 \item \textbf{Organisms are born}
 \end{itemize}
-Organism dying acts as a replacement for fitness function. If organism dies, it no longer exits and cannot be selected to be parent! To ensure deaths in world we add health variable to Organism class(listing 1). An organism gets 100 health points when born. In each iteration of loop(animation) organism loses some health.
-
-\begin{algorithm}
-\caption{Updating death variable}
-\begin{algorithmic} 
-\STATE {$health\gets health\ -\ 1$}
-\end{algorithmic}
-\end{algorithm}
+Organism dying acts as a replacement for fitness function. If organism dies, it no longer exits and cannot be selected to be parent! To ensure deaths in world we add health variable to Organism class(listing 1). An organism gets 100 health points when born. In each iteration of loop(animation) organism loses some health(health -= 1).
 
 If organism health drops down to 0, it dies.
 
@@ -190,6 +183,7 @@ let's assume \textit{food}(and \textit{poison}) as list of vector co-ordinates o
 \ENDFOR
 \end{algorithmic}
 \end{algorithm}
+
 In this scenario organisms can eat food to live longer and have likelihood to reproduce. The system will evolve organisms with ability to find and eat food.
 
 \section{Genotype and Phenotype}
@@ -206,13 +200,8 @@ Organisms with higher sensing power find food more often and one with higher att
 	\caption{Phenotype visualizing corresponding to Genotype}
 	\label{fig:genotype-and-phenotype}
 \end{figure}
-%%===========================PHENOTYPE===========================
-\begin{figure}
-	\includegraphics[height=7cm,width=7cm]{phenotype.png}
-	\caption{Phenotype: Expression of virtual DNA}
-	\label{fig:phenotype}
-\end{figure}
-\\Figure 3 shows organism is represented in a triangular shape, and DNA phenotype is the circles around it. The two circles tend to locate food and poison and attraction/repulsion power is represented by stroke of circles. The more the stroke the more it tends to move towards the food or poison. Stroke is just mapping of steering force(attractive or repulsive) to circle outline width.
+
+Figure 3 shows organism is represented in a triangular shape, and DNA phenotype is the circles around it. The two circles tend to locate food and poison and attraction/repulsion power is represented by stroke of circles. The more the stroke the more it tends to move towards the food or poison. Stroke is just mapping of steering force(attractive or repulsive) to circle outline width.
 
 \begin{algorithm}
 \caption{Display function}
@@ -232,6 +221,12 @@ One possibility could be to presume that whenever two organisms come in proximit
 Other possibility would be to have \textit{asexual} reproduction. An organism will not require a partner. At any moment, it can make a clone of itself. The cloned organism will have same genetic make-up. So selection algorithm becomes:\\
 \textbf{\textit{At any instant, organism has 1\% chance of reproducing.}}\\
 The longer an organism lives, the more chance is there that it make atleast one child. Selection algorithm can be implemented by writing function in Organism class that harvest a random number every iteration(animation frame). If picked number is lesser than 0.01(1\%), a new organism is born.
+%%===========================PHENOTYPE===========================
+\begin{figure}
+	\includegraphics[height=7cm,width=7cm]{phenotype.png}
+	\caption{Phenotype: Expression of virtual DNA}
+	\label{fig:phenotype}
+\end{figure}
 \subsection{Reproduction}
 How does an organism reproduce? The reproduction process will involve a function in Organism class that will make a new organism object from newly made DNA. Since single parent is making a child, we call a \textit{copy} function instead. It copies the content of one array into the another.
 
@@ -274,7 +269,7 @@ The process is shown in Figure \ref{fig:mutation}. The behavior of system is gre
 \end{algorithm}
 
 \section{Experimental World}
-Now we have all pieces in place to validate the above. A two dimensional world of artificial organisms is created and each organism is controlled by network using the described development system. Evolution is governed by natural selection. No universal rule exist to delete organisms; this is under their own control. Each organism has a facing direction which is set randomly at birth. Sharp points indicate their direction. Figure \ref{fig:ecosystem} shows organisms with dominant radius are more fit(green) as compared to the ones with smaller search radius. Putting entire system together in Algorithm 1.
+Now we have all pieces in place to validate the above. A two dimensional world of artificial organisms is created and each organism is controlled by network using the described development system. Evolution is governed by natural selection. No universal rule exist to delete organisms; this is under their own control. Each organism has a facing direction which is set randomly at birth. Sharp points indicate their direction. Figure \ref{fig:ecosystem} shows organisms with dominant radius are more fit(green) as compared to the ones with smaller search radius. Putting entire system together in Algorithm 8.
 \begin{algorithm}
 \caption{Genetic Algorithm: Evolving Ecosystem}
 \begin{algorithmic} 
@@ -350,6 +345,9 @@ Mohamad, Mohd Saberi, et al. "Gene subset selection using an iterative approach 
 
 \bibitem{GA-and-machine-learning}
 Goldberg, David E., and John H. Holland. "Genetic algorithms and machine learning." Machine learning 3.2 (1988): 95-99.
+
+\bibitem{nature-of-code}
+Shiffman, Daniel, Shannon Fry, and Zannah Marsh. The nature of code. D. Shiffman, 2012.
 
 
 \end{thebibliography}

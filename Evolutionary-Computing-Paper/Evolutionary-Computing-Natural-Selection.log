@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  19 OCT 2019 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  20 OCT 2019 00:07
 entering extended mode
 **./Evolutionary-Computing-Natural-Selection.tex
 (Evolutionary-Computing-Natural-Selection.tex
@@ -561,42 +561,42 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <genotype-and-phenotype.png, id=15, 233.673pt x 92.7465pt>
 File: genotype-and-phenotype.png Graphic file (type png)
 <use genotype-and-phenotype.png>
-Package pdftex.def Info: genotype-and-phenotype.png  used on input line 205.
+Package pdftex.def Info: genotype-and-phenotype.png  used on input line 199.
 (pdftex.def)             Requested size: 233.67242pt x 92.74628pt.
-<phenotype.png, id=16, 276.43275pt x 337.86224pt>
-File: phenotype.png Graphic file (type png)
-<use phenotype.png>
-Package pdftex.def Info: phenotype.png  used on input line 211.
-(pdftex.def)             Requested size: 199.17484pt x 199.16685pt.
 
-Overfull \hbox (5.48055pt too wide) in paragraph at lines 222--223
+Overfull \hbox (5.48055pt too wide) in paragraph at lines 211--212
 [] []$\OML/cmm/m/it/10 Set stroke using mapping function on dna\OT1/cmr/m/n/10 
 [1] \OML/cmm/m/it/10 for poison$ 
  []
 
+<phenotype.png, id=16, 276.43275pt x 337.86224pt>
+File: phenotype.png Graphic file (type png)
+<use phenotype.png>
+Package pdftex.def Info: phenotype.png  used on input line 226.
+(pdftex.def)             Requested size: 199.17484pt x 199.16685pt.
 [3 <./genotype-and-phenotype.png>]
 <mutation.png, id=24, 229.45724pt x 214.401pt>
 File: mutation.png Graphic file (type png)
 <use mutation.png>
-Package pdftex.def Info: mutation.png  used on input line 255.
+Package pdftex.def Info: mutation.png  used on input line 250.
 (pdftex.def)             Requested size: 229.45667pt x 214.40047pt.
-<ecosystem.png, id=25, 770.88pt x 549.55313pt>
+ [4 <./phenotype.png> <./mutation.png>]
+<ecosystem.png, id=28, 770.88pt x 549.55313pt>
 File: ecosystem.png Graphic file (type png)
 <use ecosystem.png>
-Package pdftex.def Info: ecosystem.png  used on input line 296.
+Package pdftex.def Info: ecosystem.png  used on input line 291.
 (pdftex.def)             Requested size: 253.61485pt x 180.79965pt.
 
-Overfull \hbox (1.61485pt too wide) in paragraph at lines 296--297
+Overfull \hbox (1.61485pt too wide) in paragraph at lines 291--292
 [][] 
  []
 
-[4 <./phenotype.png> <./mutation.png>]
 <birth-and-death.png, id=30, 452.4403pt x 313.17pt>
 File: birth-and-death.png Graphic file (type png)
 <use birth-and-death.png>
-Package pdftex.def Info: birth-and-death.png  used on input line 309.
+Package pdftex.def Info: birth-and-death.png  used on input line 304.
 (pdftex.def)             Requested size: 248.84294pt x 172.24402pt.
- [5 <./ecosystem.png> <./birth-and-death.png>]
+[5 <./ecosystem.png> <./birth-and-death.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -612,10 +612,10 @@ Before submitting the final camera ready copy, remember to:
 
 ] (Evolutionary-Computing-Natural-Selection.aux) ) 
 Here is how much of TeX's memory you used:
- 6231 strings out of 492973
- 87889 string characters out of 3135941
- 167282 words of memory out of 3000000
- 10012 multiletter control sequences out of 15000+200000
+ 6232 strings out of 492973
+ 87905 string characters out of 3135941
+ 167286 words of memory out of 3000000
+ 10013 multiletter control sequences out of 15000+200000
  39233 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,14n,40p,1040b,1140s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -629,7 +629,7 @@ TeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
 mbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Evolutionary-Computing-Natural-Selection.pdf (6 pages, 406079
+Output written on Evolutionary-Computing-Natural-Selection.pdf (6 pages, 405825
  bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
