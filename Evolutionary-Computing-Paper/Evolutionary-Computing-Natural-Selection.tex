@@ -79,7 +79,7 @@ Evolutionary computing, natural selection, neuroevolution
 \end{IEEEkeywords}
 
 \section{Introduction}
-Evolutionary Computing(EC)\cite{evolvable-machines} is and algorithmic paradigm to solve search and optimization problems using core principles behind Darwinian evolutionary theory. There will be no discussion of protein synthesis, RNA and other topics related to actual biological process, rather we develop algorithms inspired by these principles. Can we think of DNA as  object(brain) to an artificial organism?\cite{Stanley} Can objects generate new objects and pass on their DNA? The answer to the questions is yes. This paper look into biological principles of evolution and find way to apply those in code \cite{algorithms-and-experiments}. We simulate one of the most powerful process found in nature without going into depth of science of genetics. I encourage readers to explore possibilities for expanding the scenario provided and don't care so much on accurate simulation of evolution; rather, care upon applying evolutionary strategies in software.
+Evolutionary Computing(EC)\cite{evolvable-machines} is an algorithmic paradigm to solve search and optimization problems using core principles behind Darwinian evolutionary theory. There will be no discussion of protein synthesis, RNA and other topics related to actual biological process, rather we develop algorithms inspired by these principles. Can we think of DNA as  object(brain) to an artificial organism?\cite{Stanley} Can objects generate new objects and pass on their DNA? The answer to the questions is yes. This paper look into biological principles of evolution and find way to apply those in code \cite{algorithms-and-experiments}. We simulate one of the most powerful process found in nature without going into depth of science of genetics. I encourage readers to explore possibilities for expanding the scenario provided and don't care so much on accurate simulation of evolution; rather, care upon applying evolutionary strategies in software.
 
 \section{Technique to evolve behavior}
 Artificial life presents us with problem which is difficult to specify to a machine. Therefore we should either increase our grasp on it, or create something which outperform the statements we give it \cite{channon&damper}. The first possibility is not appropriate as it is based on traditional fitness function approach. It also includes manually increasing the understanding and modelling life by impressive systems within their environments.\\
@@ -105,7 +105,7 @@ We create an artificial life scenario to validate the above. The Asystem is a wo
 
 \subsection{Genotype}
 The digital information-the actual genetic code is an organisms \textbf{genotype}. In simple words, it is the data that simulate the brain functionality. From generation to generation this information is passed down. What are entities in the world? How to design the genotype for the entities? What data structure would you use to store the properties? How to choose the encoding for the system? Attention to be paid to developing system in which children's network must resemble parent aspects-keeping in mind Darwinian principle of heredity.\\
-Taking into account the proposed development environment system, each organism's DNA must have the following:
+Taking into account the proposed development environment system, each organism's DNA must have the following(Fig. 1):
 \begin{enumerate}
 \item \textbf{Attraction/Repulsion to food}
 \item \textbf{Attraction/Repulsion to poison}
@@ -132,7 +132,7 @@ class Organism {
 	.....
 }
 \end{lstlisting}
-We will store the population of organisms in a list(not in array) as we expect population to grow and shrink as how often organisms die or are born. We initialize the elements of list as organisms.
+We will store the population of organisms in a list(not in array) as we expect population to grow and shrink as how often organisms die or are born. We initialize the elements of list as organisms(Algorithm 1).
 
 \begin{algorithm}
 \caption{Making initial population of organisms}
@@ -184,7 +184,22 @@ let's assume \textit{food}(and \textit{poison}) as list of vector co-ordinates o
 \end{algorithmic}
 \end{algorithm}
 
-In this scenario organisms can eat food to live longer and have likelihood to reproduce. The system will evolve organisms with ability to find and eat food.
+\begin{algorithm}
+\caption{Function to eat poison}
+\begin{algorithmic} 
+\STATE {$i\gets size\ of\ poison\ list$}
+\FOR {$i\geq 0$}
+\STATE {$poison\_location\gets poison[i]$}
+\STATE {$dist\gets distance(poison\_location,\ organism\_location)$}
+\IF {$dist\leq dna[3]$}
+\STATE {$health\gets health\ -\ 100$}
+\STATE {$poison\ list \xleftarrow{\text{remove}} poison\_location$}
+\ENDIF
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+
+In this scenario organisms can eat food(Algorithm 3) to live longer and have likelihood to reproduce. The system will evolve organisms with ability to find and eat food.
 
 \section{Genotype and Phenotype}
 Its important to know distinction between concepts of \textit{genotype} and \textit{phenotype}. The actual genetic data Figure \ref{fig:genotype} is element's genotype. The \textbf{phenotype}, however, is the expression of that data. This decides how we use genetic algorithm in our work \cite{mapping-genotype-phenotype}. How will we outline genotype to visualize it as phenotype? What does genotype variables express? This is done by graphic programming. Consider probably simplest color example in Figure \ref{fig:genotype-and-phenotype}. As you see, genotype is digital data stored in integer variables and we choose to express that integer as color. But choosing expression for data is arbitrary. In other scenarios, you can use these integers to express length of line, weight of force etc. How can we express our organism? What could be the phenotype?\\
@@ -201,18 +216,14 @@ Organisms with higher sensing power find food more often and one with higher att
 	\label{fig:genotype-and-phenotype}
 \end{figure}
 
-Figure 3 shows organism is represented in a triangular shape, and DNA phenotype is the circles around it. The two circles tend to locate food and poison and attraction/repulsion power is represented by stroke of circles. The more the stroke the more it tends to move towards the food or poison. Stroke is just mapping of steering force(attractive or repulsive) to circle outline width.
-
-\begin{algorithm}
-\caption{Display function}
-\begin{algorithmic} 
-\STATE {$Draw\ the\ triangle$}
-\STATE {$Set\ stroke\ using\ mapping\ function\ on\ dna[0]\ for\ food$}
-\STATE {$Set\ stroke\ using\ mapping\ function\ on\ dna[1]\ for\ poison$}
-\STATE {$Draw\ food\ circle\ using\ dna[2]$}
-\STATE {$Draw\ poison\ circle\ using\ dna[3]$}
-\end{algorithmic}
-\end{algorithm}
+Figure 3 shows organism is represented in a triangular shape, and DNA phenotype is the circles around it. The two circles tend to locate food and poison and attraction/repulsion power is represented by stroke of circles. The more the stroke the more it tends to move towards the food or poison. Stroke is just mapping of steering force(attractive or repulsive) to circle outline width. Displaying phenotype is based on physics engine and consist of following steps:
+\begin{enumerate}
+\item Draw the triangle
+\item Set stroke using mapping function on dna[0] for food
+\item Set stroke using mapping function on dna[1] for poison
+\item Draw food circle using dna[2]
+\item Draw poison circle using dna[3]
+\end{enumerate}
 
 \section{Selection and Reproduction}
 \subsection{Selection}
@@ -251,7 +262,7 @@ Mutation is expressed in terms of mutation rate. Genetic algorithm might have 1\
 	\caption{Mutation process on DNA genotype}
 	\label{fig:mutation}
 \end{figure}
-The process is shown in Figure \ref{fig:mutation}. The behavior of system is greatly affected by mutation rate. Obviously, higher mutation rate say 80\% would nullify the evolutionary process. If major parts of gene are generated randomly, we can't assure that "fit" genes occur with greater frequency. Following algorithm mutate child's genes based on mutation probability.
+The process is shown in Figure \ref{fig:mutation}. The behavior of system is greatly affected by mutation rate. Obviously, higher mutation rate say 80\% would nullify the evolutionary process. If major parts of gene are generated randomly, we can't assure that "fit" genes occur with greater frequency. Algorithm 6 mutate child's genes based on mutation probability.
 
 \begin{algorithm}
 \caption{Mutate function mutating genes array based on mutation rate}
@@ -269,7 +280,7 @@ The process is shown in Figure \ref{fig:mutation}. The behavior of system is gre
 \end{algorithm}
 
 \section{Experimental World}
-Now we have all pieces in place to validate the above. A two dimensional world of artificial organisms is created and each organism is controlled by network using the described development system. Evolution is governed by natural selection. No universal rule exist to delete organisms; this is under their own control. Each organism has a facing direction which is set randomly at birth. Sharp points indicate their direction. Figure \ref{fig:ecosystem} shows organisms with dominant radius are more fit(green) as compared to the ones with smaller search radius. Putting entire system together in Algorithm 8.
+Now we have all pieces in place to validate the above. A two dimensional world of artificial organisms is created and each organism is controlled by network using the described development system. Evolution is governed by natural selection. No universal rule exist to delete organisms; this is under their own control. Each organism has a facing direction which is set randomly at birth. Sharp points indicate their direction. Figure \ref{fig:ecosystem} shows organisms with dominant radius are more fit(green) as compared to the ones with smaller search radius. Putting entire system together in Algorithm 7.
 \begin{algorithm}
 \caption{Genetic Algorithm: Evolving Ecosystem}
 \begin{algorithmic} 
