@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  4 NOV 2019 09:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  4 NOV 2019 10:34
 entering extended mode
 **./EnsembleMethods-LNCS.tex
 (EnsembleMethods-LNCS.tex
@@ -443,7 +443,47 @@ File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
-(EnsembleMethods-LNCS.aux)
+(EnsembleMethods-LNCS.aux
+
+LaTeX Warning: Label `b2' multiply defined.
+
+
+LaTeX Warning: Label `b3' multiply defined.
+
+
+LaTeX Warning: Label `b4' multiply defined.
+
+
+LaTeX Warning: Label `b5' multiply defined.
+
+
+LaTeX Warning: Label `b7' multiply defined.
+
+
+LaTeX Warning: Label `b8' multiply defined.
+
+
+LaTeX Warning: Label `b9' multiply defined.
+
+
+LaTeX Warning: Label `b12' multiply defined.
+
+
+LaTeX Warning: Label `b10' multiply defined.
+
+
+LaTeX Warning: Label `b11' multiply defined.
+
+
+LaTeX Warning: Label `b13' multiply defined.
+
+
+LaTeX Warning: Label `b1' multiply defined.
+
+
+LaTeX Warning: Label `b6' multiply defined.
+
+)
 \openout1 = `EnsembleMethods-LNCS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -460,8 +500,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 14.
@@ -645,60 +684,63 @@ File: BaggedETS.png Graphic file (type png)
 <use BaggedETS.png>
 Package pdftex.def Info: BaggedETS.png  used on input line 263.
 (pdftex.def)             Requested size: 913.15933pt x 681.29366pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-[]\OT1/cmr/m/n/9 NIST/SEMATECH e-Handbook of Sta-tis-ti-cal Meth-ods,
- []
-
-[10 <./BootstrappedSeries.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
+ [10 <./BootstrappedSeries.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
 \OT1/cmr/m/n/9 al-ity, https://machinelearningmastery.com/decompose-time-series
 -data-trend-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--284
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 []\OT1/cmr/m/n/9 Seasonal De-com-po-si-tion Of Time Se-ries By Loess- De-com-po
 se a
  []
 
 
-Underfull \hbox (badness 6157) in paragraph at lines 281--284
+Underfull \hbox (badness 6157) in paragraph at lines 295--298
 \OT1/cmr/m/n/9 time se-ries into sea-sonal, trend and ir-reg-u-lar com-po-nents
  us-ing loess,
  []
 
-
-Underfull \hbox (badness 3364) in paragraph at lines 290--292
+[11 <./BaggedETS.png>]
+Underfull \hbox (badness 2027) in paragraph at lines 318--320
 []\OT1/cmr/m/n/9 Dealing with miss-ing val-ues and out-liers, https://otexts.co
 m/fpp2/missing-
  []
 
-[11 <./BaggedETS.png>] (EnsembleMethods-LNCS.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+[]\OT1/cmr/m/n/9 NIST/SEMATECH e-Handbook of Sta-tis-ti-cal Meth-ods,
+ []
+
+[12] (EnsembleMethods-LNCS.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
  6401 strings out of 492973
- 81855 string characters out of 3135941
- 341001 words of memory out of 3000000
+ 81820 string characters out of 3135941
+ 341045 words of memory out of 3000000
  10164 multiletter control sequences out of 15000+200000
  11117 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,42p,800b,2345s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\hp\AppData\Local\
-MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0900.pk><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmtt9.pfb>
-Output written on EnsembleMethods-LNCS.pdf (11 pages, 385844 bytes).
+ <C:\Users\hp\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcr
+m0900.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on EnsembleMethods-LNCS.pdf (12 pages, 389456 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

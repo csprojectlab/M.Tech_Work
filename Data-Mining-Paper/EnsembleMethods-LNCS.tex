@@ -56,13 +56,13 @@ Multiplicative model is based on assumption that time series can affect one anot
 %
 %
 \section{Time-Series Forecasting}
-Time series can be defined as an ordered sequence of values of a variable at equally spaced time intervals [1]. Time series models obtains details of forces and structure exhibited by observed data. Classical approaches decompose the time series into trend, seasonal and residual components. Before applying models data is examined and if necessary, some transformations are applied to be able to interpret the series better. This can stabilize the variance. For example, if there is trend in the series then logarithmic transformation is suggested. If there are outliers they need to be adjusted.
+Time series can be defined as an ordered sequence of values of a variable at equally spaced time intervals [27]. Time series models obtains details of forces and structure exhibited by observed data. Classical approaches decompose the time series into trend, seasonal and residual components. Before applying models data is examined and if necessary, some transformations are applied to be able to interpret the series better. This can stabilize the variance. For example, if there is trend in the series then logarithmic transformation is suggested. If there are outliers they need to be adjusted.
 \linebreak Time series is classified into two types:
 \begin{itemize}
 \item Univariate- means you have the time-stamp, and you have one variable connected to the time-stamp. For univariate datasets we have common statistics like mean and variance.
 \item Multivariate- is like a metric with several variables attached to time-stamp.
 \end{itemize}
-The fitting of a model is an ambitious undertaking. Many kind of models are there. Data stationarity is a common assumption in many time series techniques. Stationarity is a key trait when it comes to working with time data. Basically the question behind it is- has the data the same statistical properties throughout the time series? Stats properties which determine stationarity contain variance, mean and autocorrelation. Discussion on these models is done in [5,6,9,8].
+The fitting of a model is an ambitious undertaking. Many kind of models are there. Data stationarity is a common assumption in many time series techniques. Stationarity is a key trait when it comes to working with time data. Basically the question behind it is- has the data the same statistical properties throughout the time series? Stats properties which determine stationarity contain variance, mean and autocorrelation. Discussion on these models is done in [9,19,20,24].
 %
 %
 %
@@ -71,9 +71,9 @@ To make some predictions about the future the data has to be time series. For th
  \paragraph{Converting to univariate} The acquired dataset was multivariate as it contained data of multiple sub-regions of Punjab whereas our analysis required data from only one sub-region. Thus, we first removed the data related to other sub-regions and made it a univariate dataset. 
 \paragraph{Removing attributes} We removed the attributes which were of no use in the forecasting process like the sub-region identifier ID and many more. Only contributing attributes in the forecasting were kept.
 \paragraph{Converting to ts} We used the ts() function of R[3] to create time series object of vector dataset. The data was sampled at equispaced points in time.
-\paragraph{Decomposing} The data had trend in it, and we found change in mean as a result of trend. Predictions tend to be underestimated as a result of this. One solution to the problem is to de-trend the data[4]. Thus, data was decomposed into single components[5], removed the trend component, and checked for trend stationarity. This was not enough and differencing was used, which gives difference stationarity.
-\paragraph{Data cleaning} Outliers induce biasing in forecasting models. They are unusual or may be errors.  tsclean() function identifies and replaces outliers[8]. Other way could be logarithmic transformation[9].
-\paragraph{Testing Stationarity} Unit root tests can be used to check for trend stationarity or difference stationarity. The most prominent of these test is the augmented Dickey-Fuller test[6]. The adf.test() function in R[7] performs this test for null hypothesis of a unit root on a univariate ts. It removes autocorrelation before it tests for stationarity.
+\paragraph{Decomposing} The data had trend in it, and we found change in mean as a result of trend. Predictions tend to be underestimated as a result of this. One solution to the problem is to de-trend the data[4]. Thus, data was decomposed into single components[9], removed the trend component, and checked for trend stationarity. This was not enough and differencing was used, which gives difference stationarity.
+\paragraph{Data cleaning} Outliers induce biasing in forecasting models. They are unusual or may be errors.  tsclean() function identifies and replaces outliers[19]. Other way could be logarithmic transformation[20].
+\paragraph{Testing Stationarity} Unit root tests can be used to check for trend stationarity or difference stationarity. The most prominent of these test is the augmented Dickey-Fuller test[24]. The adf.test() function in R[18] performs this test for null hypothesis of a unit root on a univariate ts. It removes autocorrelation before it tests for stationarity.
 
 Now that the data is converted into a form that is suitable for accurate predictions, we move to forecasting methods. In next section we discuss about different forecasting techniques.
 \begin{figure}
@@ -87,7 +87,7 @@ Now that the data is converted into a form that is suitable for accurate predict
 \section{Time Series Models And Forecasting}
 Interestingly, simple and primitive forecasting methods can outperform advanced models in certain circumstances. If dataset is random, then its hard with models like ARIMA and exponential smoothing. The beauty of advanced models is that they can exploit patterns really well. The idea of forecasting model is to exploit one obvious fact. The fact can be the last observation, it can be the mean, or it can be the general trend.
 \linebreak
-Forecasting methods involves several approaches to predicting uncertain events. Such system requires identifying forecasting problems, implementing a range of forecasting methods, making an appropriate selection for each problem and refining forecasting methods by evaluation over time[10].
+Forecasting methods involves several approaches to predicting uncertain events. Such system requires identifying forecasting problems, implementing a range of forecasting methods, making an appropriate selection for each problem and refining forecasting methods by evaluation over time[25].
 
 \subsection{Basic Forecasting Models: Mean, Naive And Drift}
 These models carry the observations forward. Last observations are projected into the future. The naive method can be tweaked so that it can work with seasonal dataset. Last observations of same seasonal stage are projected. Another simple method is average or mean which simply calculates the mean of data. Forecast of future values is equal to mean of historical data. Drift method calculate the increase between the first and last observation and carry the increase to the future.
@@ -181,7 +181,7 @@ Seasonal data can also be modelled using ARIMA. It explicitly supports univariat
 \caption{SARIMA model diagnostics}
 \end{figure}
 
-SARIMA chooses the lag equal to the number of seasons to remove the additive seasonal effects. Using the sarima() function we inspect the model fit diagnostics[13].
+SARIMA chooses the lag equal to the number of seasons to remove the additive seasonal effects. Using the sarima() function we inspect the model fit diagnostics[14].
 
 Looking at the model diagnostics, we can see that the model does fit fine, although there might still be some outliers in the data with unexplained variance as shown in the Normal QQ plot[Fig.7].
 Using the sarima.for() function, we can provide a forecast of the next few time intervals based on our model[Fig.6]. There is a prediction bounds[Fig.8], along with the predicted data. The uncertainty
@@ -220,7 +220,7 @@ NNAR & 0.64 \\
 \end{table}
 
 \section{Ensemble Method: Bootstrapping and Bagging}
-Time series can be simulated to predict future values by using a model. A similar time series to the observed series can be generated using bootstrapping. We present a method for bootstrap aggregation (bagging) of exponential smoothing methods. Time series is first Box-Cox transformed[15], and decomposed into trend, seasonal and residual components. A bootstrapped remainder series is obtained by shuffling versions of residual components. Contiguous sections of time series are selected at random and joined together. Trend and seasonality components are added and Box-Cox transformation is reversed to original time series.
+Time series can be simulated to predict future values by using a model. A similar time series to the observed series can be generated using bootstrapping. We present a method for bootstrap aggregation (bagging) of exponential smoothing methods. Time series is first Box-Cox transformed[16], and decomposed into trend, seasonal and residual components. A bootstrapped remainder series is obtained by shuffling versions of residual components. Contiguous sections of time series are selected at random and joined together. Trend and seasonality components are added and Box-Cox transformation is reversed to original time series.
 
 Bootstrapping is useful in two ways:
 \begin{itemize}
@@ -269,34 +269,40 @@ In this analysis we compared the results from multiple models, with their parame
 
 
 \begin{thebibliography}{8}
-\bibitem{b1} NIST/SEMATECH e-Handbook of Statistical Methods, http://www.itl.nist.gov/div898/handbook/
+
+\bibitem{b1}
+Lajbcygier, Paul R., and J. T. Conner. "Improved option pricing using bootstrap methods." Proceedings of International Conference on Neural Networks (ICNN'97). Vol. 4. IEEE, 1997.
+
 \bibitem{b2} Open Government Data(OGD) Platform India,
 https://data.gov.in/keywords/fci-stock
+
 \bibitem{b3} ts: Time-Series Objects,
 
 https://www.rdocumentation.org/packages/stats/versions/3.5.3/topics/ts
 
 \bibitem{b4} J. Brownlee, How To Decompose Time Series Data Into Trend And Seasonality,
 https://machinelearningmastery.com/decompose-time-series-data-trend-seasonality/
+
+\bibitem{b2}
+He, Haibo, and Xiaoping Shen. "Bootstrap methods for foreign currency exchange rates prediction." 2007 International Joint Conference on Neural Networks. IEEE, 2007.
+\bibitem{b3}
+Moraes, L. A., et al. "Development of a methodology to forecast time series using few input variables." 2013 IEEE PES Conference on Innovative Smart Grid Technologies (ISGT Latin America). IEEE, 2013.
+\bibitem{b4}
+Rahman, Md Mustafizur, et al. "Forecasting time series—A layered ensemble architecture." 2014 International Joint Conference on Neural Networks (IJCNN). IEEE, 2014.
+\bibitem{b5}
+Mahalakshmi, Ganapathy, S. Sridevi, and S. Rajaram. "A survey on forecasting of time series data." 2016 International Conference on Computing Technologies and Intelligent Data Engineering (ICCTIDE'16). IEEE, 2016.
+
 \bibitem{b5} Seasonal Decomposition Of Time Series By Loess-
 Decompose a time series into seasonal, trend and irregular components using loess,
 https://www.rdocumentation.org/packages/stats/versions/3.6.0/topics/stl
-\bibitem{b6} Rob J Hyndman, Unit Root Tests,
 
-https://www.rdocumentation.org/packages/aTSA/versions/3.1.2/topics/adf.test
-\bibitem{b7}Augmented Dickey-Fuller Test,
+\bibitem{b6}
+Xinxiang, Zhang, Zhou Bo, and Fu Huijuan. "A comparison study of outpatient visits forecasting effect between ARIMA with seasonal index and SARIMA." 2017 International Conference on Progress in Informatics and Computing (PIC). IEEE, 2017.
 
-https://www.rdocumentation.org/packages/aTSA/versions/3.1.2/topics/adf.test
-\bibitem{b8} Dealing with missing values and outliers,
-https://otexts.com/fpp2/missing-outliers.html
-\bibitem{b9} Transforming Data,
-http://rcompanion.org/handbook/I-12.html
-
-\bibitem{b10}Rob J Hyndman and George Athansopoulos, Forecasting, planning and goals
-https://otexts.com/fpp2/planning.html 
-\bibitem{b11} Rob J Hyndman and George Athansopoulos, Advanced Forecasting Methods,
-https://otexts.com/fpp2/nnetar.html
-
+\bibitem{b7}
+Kedrowski, Reilly, et al. "Short-Term Seasonal Energy Forecasting." 2018 IEEE International Conference on Electro/Information Technology (EIT). IEEE, 2018.
+\bibitem{b8}
+Ratakonda, Sai Swaroop, and Sreela Sasi. "Seasonal Trend Analysis on Multi-Variate Time Series Data." 2018 International Conference on Data Science and Engineering (ICDSE). IEEE, 2018.
 \bibitem{b12} Debasish Sena1
  and Naresh K. Nagwani, A NEURAL NETWORK AUTOREGRESSION MODEL TO FORECAST
 PER CAPITA DISPOSABLE INCOME 
@@ -304,5 +310,34 @@ PER CAPITA DISPOSABLE INCOME
 https://medium.com/@kfoofw/seasonal-lags-sarima-model-fa671a858729
 \bibitem{b14}  Kandananond, K. (2012). A Comparison of Various Forecasting Methods for Autocorrelated Time Series. International Journal of Engineering Business Management. https://doi.org/10.5772/51088
 \bibitem{b15} Box, G. E. P. and Cox, D. R. (1964). An analysis of transformations, Journal of the Royal Statistical Society, Series B, 26, 211-252.
+\bibitem{b9}
+Vaishnav, Vaibhav, and Jayashri Vajpai. "Seasonal Time Series Forecasting by Group Method of Data Handling." 2018 IEEE International Students' Conference on Electrical, Electronics and Computer Science (SCEECS). IEEE, 2018.
+\bibitem{b7}Augmented Dickey-Fuller Test,
+
+https://www.rdocumentation.org/packages/aTSA/versions/3.1.2/topics/adf.test
+\bibitem{b8} Dealing with missing values and outliers,
+https://otexts.com/fpp2/missing-outliers.html
+\bibitem{b9} Transforming Data,
+http://rcompanion.org/handbook/I-12.html
+\bibitem{b10}
+Dong, Xibin, et al. "A survey on ensemble learning." Frontiers of Computer Science: 1-18.
+\bibitem{b11}
+Maqsood, Imran, Muhammad Riaz Khan, and Ajith Abraham. "An ensemble of neural networks for weather forecasting." Neural Computing \& Applications 13.2 (2004): 112-122.
+\bibitem{b12}
+Rao, J. Sunil. "Bootstrapping to assess and improve atmospheric prediction models." Data Mining and Knowledge Discovery 4.1 (2000): 29-41.
+\bibitem{b10}Rob J Hyndman and George Athansopoulos, Forecasting, planning and goals
+https://otexts.com/fpp2/planning.html 
+\bibitem{b11} Rob J Hyndman and George Athansopoulos, Advanced Forecasting Methods,
+https://otexts.com/fpp2/nnetar.html
+\bibitem{b13}
+Zaman, M. Faisal, and Hideo Hirose. "Classification performance of bagging and boosting type ensemble methods with small training sets." New Generation Computing 29.3 (2011): 277.
+
+\bibitem{b1} NIST/SEMATECH e-Handbook of Statistical Methods, http://www.itl.nist.gov/div898/handbook/
+
+\bibitem{b6} Rob J Hyndman, Unit Root Tests,
+
+https://www.rdocumentation.org/packages/aTSA/versions/3.1.2/topics/adf.test
+
+
 \end{thebibliography}
 \end{document}
