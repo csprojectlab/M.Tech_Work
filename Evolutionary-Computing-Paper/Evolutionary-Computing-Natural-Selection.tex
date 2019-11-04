@@ -7,6 +7,8 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithm}
 \usepackage{algorithmic}
+\usepackage{amsmath}
+\usepackage{cases}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
@@ -60,7 +62,7 @@
 Punjab, India \\
 aridaman1995@gmail.com}
 \and
-\IEEEauthorblockN{Dr. Geeta Sikka}
+\IEEEauthorblockN{Geeta Sikka}
 \IEEEauthorblockA{\textit{Department of Computer Science and Engg.} \\
 \textit{NIT-Jalandhar}\\
 Punjab, India \\
@@ -85,7 +87,7 @@ Evolutionary Computing(EC)\cite{evolvable-machines} is an algorithmic paradigm t
 Artificial life presents us with problem which is difficult to specify to a machine. Therefore we should either increase our grasp on it, or create something which outperform the statements we give it \cite{channon&damper}. The first possibility is not appropriate as it is based on traditional fitness function approach. It also includes manually increasing the understanding and modelling life by impressive systems within their environments.\\
 The second option has no explicit evaluation function. Through organism interaction with environment(external stimulus) certain behaviors evolve from them without any long-term goal \cite{soccer-game-evolution}. Algorithm is implemented in specific way to solve organism behavior problem. As evolution is applied to inherently complex problems \cite{algorithms-and-experiments} finding adequate evaluation function becomes an obvious problem. At the same time natural selection is necessary for emergence of new generation of organisms but it doesn't imply sustained emergence. The changes in genotype must be taking place slowly and must be correlated with the fitness evaluation of an organism \cite{mapping-genotype-phenotype}.
 
-\section{What to evolve}
+\section{Evolving structure}
 The organisms need to evolve over time so they need a human brain like structure. But how should the brain network be specified? The emergence of new generation requires new neural structures as well. There are various known examples of structures that can serve our purpose.\\
 Gene theory is one of the solution. At any stage of development, in any one cell, only a small proportion of genes will be used. The gene lies in the cell and cell in the brain itself. The duplicate system could be obtained either by gene duplication or along with development process.\\
 Direct duplication of gene as a source of neural structure duplication is not feasible(as it will only create a copy of parent). Therefore, for constructive evolutionary emergence of complex behavior, a mutation process is required. A newly created organism receive a duplicated copy of its parent, but the development process mutates genes in some constraints; based on some mutation rate. This modular development lead to emergence of new unexpected(may be good or bad) behavior. New combination of features occur and organisms evolve \cite{Stanley}.
@@ -151,7 +153,12 @@ So far we have an organism that moves across the window and code that manages va
 \item \textbf{Organism die}
 \item \textbf{Organisms are born}
 \end{itemize}
-Organism dying acts as a replacement for fitness function. If organism dies, it no longer exits and cannot be selected to be parent! To ensure deaths in world we add health variable to Organism class(listing 1). An organism gets 100 health points when born. In each iteration of loop(animation) organism loses some health(health -= 1).
+Organism dying acts as a replacement for fitness function. If organism dies, it no longer exits and cannot be selected to be parent! To ensure deaths in world we add health variable to Organism class(listing 1). An organism gets 100 health points when born. In each iteration of loop(animation) organism loses some health.
+\begin{numcases}{health=}
+  +100, & if $food$\\
+  -100, & if $poison$\\
+  -1,   & otherwise
+\end{numcases}
 
 If organism health drops down to 0, it dies.
 
@@ -309,7 +316,7 @@ Now we have all pieces in place to validate the above. A two dimensional world o
 \item \textbf{Convergence and similarity:} When organism reproduce, the child's network almost resembles the parent's network. Examination of experimental world shows resemblance between many of them. Throughout the evolution, population remains converged in small number of species(choosing the reproduction and mutation rate carefully). The fitness criteria also met the developmental landscape, making it appropriate for long-term evolution.
 \item \textbf{Increasing Complexity:} For a short period, the organisms with basic genotype move randomly across the system. For next two to three thousand frames(iterations), we find organism's strategy of only eating food(or otherwise die) and having high repulsion to poison. At lateral stages when food is left in small proportion as compared to poison; organisms die but don't eat poison. Some networks do better than others but not so well to display a dominating effect. Success is understandable if we watch it in action.
 \end{itemize}
-Some organisms with lower food detection radius but higher poison detection radius do well(live longer) because of attraction/repulsion genes. Once the food is in range, high attraction to food steers the organism towards it abruptly(may be previously it was going to eat poison). If there are dominant organisms in ecosystem, then the world always have space for next generation to exist.\\ Taking count of number of organisms born and died, suggest that further generation emerge. However, behavior level analysis is difficult. Observation reveals that current generation share characters with previous species but are still different. Population also start remaining steady after typical run.
+Some organisms with lower food detection radius but higher poison detection radius do well(live longer) because of attraction/repulsion genes. Once the food is in range, high attraction to food steers the organism towards it abruptly(may be previously it was going to eat poison). If there are dominant organisms in ecosystem, then the world always have space for next generation to exist.\\ Taking count of number of organisms born and died, suggest that further generation emerge(Fig. 6). However, behavior level analysis is difficult. Observation reveals that current generation share characters with previous species but are still different. Population also start remaining steady after typical run.
 %%===========================BIRTH-DEATH===========================
 \begin{figure}
 	\includegraphics[scale=0.55]{birth-and-death.png}
@@ -360,6 +367,22 @@ Goldberg, David E., and John H. Holland. "Genetic algorithms and machine learnin
 \bibitem{nature-of-code}
 Shiffman, Daniel, Shannon Fry, and Zannah Marsh. The nature of code. D. Shiffman, 2012.
 
+\bibitem{intelligent-agents}
+Cristea, Paul, Aurel Arsene, and Bogdan Nitulescu. "Evolutionary intelligent agents." Proceedings of the 2000 Congress on Evolutionary Computation. CEC00 (Cat. No. 00TH8512). Vol. 2. IEEE, 2000.
+
+\bibitem{enhanced-genetic-algorithm}
+Guo, Pengfei, Xuezhi Wang, and Yingshi Han. "The enhanced genetic algorithms for the optimization design." 2010 3rd International Conference on Biomedical Engineering and Informatics. Vol. 7. IEEE, 2010.
+
+\bibitem{real-coded genetic algorithms}
+Herrera, Francisco, Manuel Lozano, and Jose L. Verdegay. "Tackling real-coded genetic algorithms: Operators and tools for behavioural analysis." Artificial intelligence review 12.4: 265-319.
+
+\bibitem{population-genetic-algorithms}
+Lim, Ting Yee. "Structured population genetic algorithms: a literature survey." Artificial Intelligence Review 41.3 (2014): 385-399.
+
+\bibitem{evolvable-components}
+Sekanina, Lukáš. "Evolvable computing by means of evolvable components." Natural Computing 3.3 (2004): 253-292.
+
 
 \end{thebibliography}
+
 \end{document}

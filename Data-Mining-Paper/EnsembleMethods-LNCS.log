@@ -1,125 +1,144 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  31 OCT 2019 10:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2019.6.10)  4 NOV 2019 09:36
 entering extended mode
-**./Evolutionary-Computing-Natural-Selection.tex
-(Evolutionary-Computing-Natural-Selection.tex
+**./EnsembleMethods-LNCS.tex
+(EnsembleMethods-LNCS.tex
 LaTeX2e <2018-04-01> patch level 5
-("C:\Program Files\MiKTeX 2.9\tex\latex\ieeetran\IEEEtran.cls"
-Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
--- See the "IEEEtran_HOWTO" manual for usage information.
--- http://www.michaelshell.org/tex/ieeetran/
-\@IEEEtrantmpdimenA=\dimen102
-\@IEEEtrantmpdimenB=\dimen103
-\@IEEEtrantmpdimenC=\dimen104
-\@IEEEtrantmpcountA=\count80
-\@IEEEtrantmpcountB=\count81
-\@IEEEtrantmpcountC=\count82
-\@IEEEtrantmptoksA=\toks14
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+(llncs.cls
+Document Class: llncs 2018/03/10 v2.20 
+ LaTeX document class for Lecture Notes in Computer Science
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
--- Using 8.5in x 11in (letter) paper.
--- Using PDF output.
-\@IEEEnormalsizeunitybaselineskip=\dimen105
--- This is a 10 point document.
-\CLASSINFOnormalsizebaselineskip=\dimen106
-\CLASSINFOnormalsizeunitybaselineskip=\dimen107
-\IEEEnormaljot=\dimen108
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-\IEEEquantizedlength=\dimen109
-\IEEEquantizedlengthdiff=\dimen110
-\IEEEquantizedtextheightdiff=\dimen111
-\IEEEilabelindentA=\dimen112
-\IEEEilabelindentB=\dimen113
-\IEEEilabelindent=\dimen114
-\IEEEelabelindent=\dimen115
-\IEEEdlabelindent=\dimen116
-\IEEElabelindent=\dimen117
-\IEEEiednormlabelsep=\dimen118
-\IEEEiedmathlabelsep=\dimen119
-\IEEEiedtopsep=\skip41
-\c@section=\count83
-\c@subsection=\count84
-\c@subsubsection=\count85
-\c@paragraph=\count86
-\c@IEEEsubequation=\count87
-\abovecaptionskip=\skip42
-\belowcaptionskip=\skip43
-\c@figure=\count88
-\c@table=\count89
-\@IEEEeqnnumcols=\count90
-\@IEEEeqncolcnt=\count91
-\@IEEEsubeqnnumrollback=\count92
-\@IEEEquantizeheightA=\dimen120
-\@IEEEquantizeheightB=\dimen121
-\@IEEEquantizeheightC=\dimen122
-\@IEEEquantizeprevdepth=\dimen123
-\@IEEEquantizemultiple=\count93
-\@IEEEquantizeboxA=\box26
-\@IEEEtmpitemindent=\dimen124
-\IEEEPARstartletwidth=\dimen125
-\c@IEEEbiography=\count94
-\@IEEEtranrubishbin=\box27
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
 )
-** ATTENTION: Overriding command lockouts (line 2).
-("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
+\c@tracingmulticols=\count88
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count89
+\c@collectmore=\count90
+\doublecol@number=\count91
+\multicoltolerance=\count92
+\multicolpretolerance=\count93
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\maxbalancingoverflow=\dimen108
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count94
+\c@finalcolumnbadness=\count95
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\mc@col@check@num=\count96
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\aliascnt.sty"
+Package: aliascnt 2016/05/16 v1.4 Alias counters (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\remreset.sty"
+
+Package remreset Warning: The remreset package is obsolete:
+(remreset)                \@removefomresset is defined.
+
+))
+\c@chapter=\count97
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 365.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 368.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 369.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 370.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 371.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
+\tocchpnum=\dimen112
+\tocsecnum=\dimen113
+\tocsectotal=\dimen114
+\tocsubsecnum=\dimen115
+\tocsubsectotal=\dimen116
+\tocsubsubsecnum=\dimen117
+\tocsubsubsectotal=\dimen118
+\tocparanum=\dimen119
+\tocparatotal=\dimen120
+\tocsubparanum=\dimen121
+\@tempcntc=\count98
+\fnindent=\dimen122
+\c@@inst=\count99
+\c@@auth=\count100
+\c@auco=\count101
+\instindent=\dimen123
+\authrun=\box52
+\authorrunning=\toks14
+\tocauthor=\toks15
+\titrun=\box53
+\titlerunning=\toks16
+\toctitle=\toks17
+\c@theorem=\count102
+\c@case=\count103
+\c@conjecture=\count104
+\c@corollary=\count105
+\c@definition=\count106
+\c@example=\count107
+\c@exercise=\count108
+\c@lemma=\count109
+\c@note=\count110
+\c@problem=\count111
+\c@property=\count112
+\c@proposition=\count113
+\c@question=\count114
+\c@solution=\count115
+\c@remark=\count116
+\headlineindent=\dimen124
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip44
+\@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
@@ -127,55 +146,58 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen126
+\@emptytoks=\toks18
+\ex@=\dimen125
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen127
+\pmbraise@=\dimen126
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count117
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count118
+\leftroot@=\count119
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count120
+\DOTSCASE@=\count121
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen128
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+\big@size=\dimen127
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+\macc@depth=\count122
+\c@MaxMatrixCols=\count123
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
-\tag@help=\toks16
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
-\andhelp@=\toks17
-\eqnshift@=\dimen129
-\alignsep@=\dimen130
-\tagshift@=\dimen131
-\tagwidth@=\dimen132
-\totwidth@=\dimen133
-\lineht@=\dimen134
-\@envbody=\toks18
-\multlinegap=\skip45
-\multlinetaggap=\skip46
-\mathdisplay@stack=\toks19
+\c@parentequation=\count124
+\dspbrk@lvl=\count125
+\tag@help=\toks19
+\row@=\count126
+\column@=\count127
+\maxfields@=\count128
+\andhelp@=\toks20
+\eqnshift@=\dimen128
+\alignsep@=\dimen129
+\tagshift@=\dimen130
+\tagwidth@=\dimen131
+\totwidth@=\dimen132
+\lineht@=\dimen133
+\@envbody=\toks21
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
@@ -185,40 +207,22 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count107
-\float@exts=\toks20
-\float@box=\box30
-\@float@everytoks=\toks21
-\@floatcapt=\box31
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\@float@every@algorithm=\toks22
-\c@algorithm=\count108
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
-\c@ALC@unique=\count109
-\c@ALC@line=\count110
-\c@ALC@rem=\count111
-\c@ALC@depth=\count112
-\ALC@tlm=\skip47
-\algorithmicindent=\skip48
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\cases\cases.sty"
-Package: cases 2002/05/02 ver 2.5 
+\c@ALC@unique=\count129
+\c@ALC@line=\count130
+\c@ALC@rem=\count131
+\c@ALC@depth=\count132
+\ALC@tlm=\skip48
+\algorithmicindent=\skip49
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -237,8 +241,8 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen135
-\Gin@req@width=\dimen136
+\Gin@req@height=\dimen134
+\Gin@req@width=\dimen135
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
@@ -415,66 +419,65 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count113
-\lst@gtempboxa=\box32
+\lst@mode=\count133
+\lst@gtempboxa=\box56
 \lst@token=\toks24
-\lst@length=\count114
-\lst@currlwidth=\dimen137
-\lst@column=\count115
-\lst@pos=\count116
-\lst@lostspace=\dimen138
-\lst@width=\dimen139
-\lst@newlines=\count117
-\lst@lineno=\count118
-\lst@maxwidth=\dimen140
+\lst@length=\count134
+\lst@currlwidth=\dimen136
+\lst@column=\count135
+\lst@pos=\count136
+\lst@lostspace=\dimen137
+\lst@width=\dimen138
+\lst@newlines=\count137
+\lst@lineno=\count138
+\lst@maxwidth=\dimen139
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count119
-\lst@skipnumbers=\count120
-\lst@framebox=\box33
+\c@lstnumber=\count139
+\lst@skipnumbers=\count140
+\lst@framebox=\box57
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
-(Evolutionary-Computing-Natural-Selection.aux)
-\openout1 = `Evolutionary-Computing-Natural-Selection.aux'.
+(EnsembleMethods-LNCS.aux)
+\openout1 = `EnsembleMethods-LNCS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    ... okay on input line 14.
 
--- Lines per column: 56 (exact).
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen141
-\scratchbox=\box34
-\nofMPsegments=\count122
-\nofMParguments=\count123
+\scratchcounter=\count141
+\scratchdimen=\dimen140
+\scratchbox=\box58
+\nofMPsegments=\count142
+\nofMParguments=\count143
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen142
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
+\MPscratchCnt=\count144
+\MPscratchDim=\dimen141
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
 \everyMPtoPDFconversion=\toks26
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -528,108 +531,174 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count127
- [1{C:/Users/hp/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+\c@lstlisting=\count147
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
 
-
-]
-<genotype.png, id=9, 234.27525pt x 299.31825pt>
-File: genotype.png Graphic file (type png)
-<use genotype.png>
-Package pdftex.def Info: genotype.png  used on input line 121.
-(pdftex.def)             Requested size: 234.27467pt x 299.31752pt.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 130.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <8> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 131.
- [2 <./genotype.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 142.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 142.
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (5.16779pt too wide) in paragraph at lines 200--201
-[] []$\OML/cmm/m/it/10 dist \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 distance\OT1/cm
-r/m/n/10 (\OML/cmm/m/it/10 poison[]location;  organism[]location\OT1/cmr/m/n/10
- )$ 
+Title too long for running head. Please supply
+a shorter form with \titlerunning prior to \maketitle
+[1
+
+{C:/Users/hp/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
+\OT1/cmr/m/n/10 liers they need to be ad-justed.
  []
 
-<genotype-and-phenotype.png, id=15, 233.673pt x 92.7465pt>
-File: genotype-and-phenotype.png Graphic file (type png)
-<use genotype-and-phenotype.png>
-Package pdftex.def Info: genotype-and-phenotype.png  used on input line 221.
-(pdftex.def)             Requested size: 233.67242pt x 92.74628pt.
-[3 <./genotype-and-phenotype.png>]
-<phenotype.png, id=24, 276.43275pt x 337.86224pt>
-File: phenotype.png Graphic file (type png)
-<use phenotype.png>
-Package pdftex.def Info: phenotype.png  used on input line 244.
-(pdftex.def)             Requested size: 199.17484pt x 199.16685pt.
-<mutation.png, id=25, 229.45724pt x 214.401pt>
-File: mutation.png Graphic file (type png)
-<use mutation.png>
-Package pdftex.def Info: mutation.png  used on input line 268.
-(pdftex.def)             Requested size: 229.45667pt x 214.40047pt.
-<ecosystem.png, id=26, 770.88pt x 549.55313pt>
-File: ecosystem.png Graphic file (type png)
-<use ecosystem.png>
-Package pdftex.def Info: ecosystem.png  used on input line 309.
-(pdftex.def)             Requested size: 253.61485pt x 180.79965pt.
+[2]
+<chart.png, id=18, 682.04813pt x 603.75563pt>
+File: chart.png Graphic file (type png)
+<use chart.png>
+Package pdftex.def Info: chart.png  used on input line 81.
+(pdftex.def)             Requested size: 682.04646pt x 603.75415pt.
 
-Overfull \hbox (1.61485pt too wide) in paragraph at lines 309--310
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
+\OT1/cmr/m/n/10 can be the gen-eral trend.
  []
 
-[4 <./phenotype.png>]
-<birth-and-death.png, id=31, 452.4403pt x 313.17pt>
-File: birth-and-death.png Graphic file (type png)
-<use birth-and-death.png>
-Package pdftex.def Info: birth-and-death.png  used on input line 322.
-(pdftex.def)             Requested size: 248.84294pt x 172.24402pt.
- [5 <./mutation.png> <./ecosystem.png>]
+[3 <./chart.png>]
+<BasicModelsNew.png, id=24, 514.3215pt x 320.99925pt>
+File: BasicModelsNew.png Graphic file (type png)
+<use BasicModelsNew.png>
+Package pdftex.def Info: BasicModelsNew.png  used on input line 96.
+(pdftex.def)             Requested size: 514.32025pt x 320.99846pt.
+ [4 <./BasicModelsNew.png>]
+<ArimaNew.png, id=28, 512.51476pt x 319.1925pt>
+File: ArimaNew.png Graphic file (type png)
+<use ArimaNew.png>
+Package pdftex.def Info: ArimaNew.png  used on input line 121.
+(pdftex.def)             Requested size: 512.51349pt x 319.19171pt.
+<Arima!AutoNew.png, id=29, 513.117pt x 326.4195pt>
+File: Arima!AutoNew.png Graphic file (type png)
+<use Arima!AutoNew.png>
+Package pdftex.def Info: Arima!AutoNew.png  used on input line 127.
+(pdftex.def)             Requested size: 513.11575pt x 326.41869pt.
+ [5 <./ArimaNew.png> <./Arima!AutoNew.png>]
+<ets.png, id=33, 655.69969pt x 541.27219pt>
+File: ets.png Graphic file (type png)
+<use ets.png>
+Package pdftex.def Info: ets.png  used on input line 148.
+(pdftex.def)             Requested size: 655.69809pt x 541.27086pt.
 
-** Conference Paper **
-Before submitting the final camera ready copy, remember to:
+Overfull \hbox (3.43285pt too wide) in paragraph at lines 141--151
+\OT1/cmr/m/n/10 could be "N"=none, "M"=Multiplicative, "A"=Additive and "Z"=aut
+omatically.
+ []
 
- 1. Manually equalize the lengths of two columns on the last page
- of your paper;
+[6 <./ets.png>]
+<NNARNew.png, id=41, 651.03226pt x 383.63326pt>
+File: NNARNew.png Graphic file (type png)
+<use NNARNew.png>
+Package pdftex.def Info: NNARNew.png  used on input line 163.
+(pdftex.def)             Requested size: 651.03067pt x 383.63231pt.
+<Sarima.png, id=42, 746.03719pt x 347.04657pt>
+File: Sarima.png Graphic file (type png)
+<use Sarima.png>
+Package pdftex.def Info: Sarima.png  used on input line 180.
+(pdftex.def)             Requested size: 746.03535pt x 347.04572pt.
+ [7 <./NNARNew.png>]
+<SarimaPrediction.png, id=47, 740.7675pt x 506.6428pt>
+File: SarimaPrediction.png Graphic file (type png)
+<use SarimaPrediction.png>
+Package pdftex.def Info: SarimaPrediction.png  used on input line 196.
+(pdftex.def)             Requested size: 740.76569pt x 506.64157pt.
+ [8 <./Sarima.png> <./SarimaPrediction.png>]
+<BootstrappedSeries.png, id=53, 765.6103pt x 574.39594pt>
+File: BootstrappedSeries.png Graphic file (type png)
+<use BootstrappedSeries.png>
+Package pdftex.def Info: BootstrappedSeries.png  used on input line 235.
+(pdftex.def)             Requested size: 765.60843pt x 574.39452pt.
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
+File: lstlang2.sty 2019/02/27 1.8b listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
+File: lstlang3.sty 2019/02/27 1.8b listings language file
+)
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 241.
 
- 2. Ensure that any PostScript and/or PDF output post-processing
- uses only Type 1 fonts and that every step in the generation
- process uses the appropriate paper size.
 
-[6 <./birth-and-death.png>] (Evolutionary-Computing-Natural-Selection.aux) ) 
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 241.
+ [9]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 244.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 244.
+<BaggedETS.png, id=57, 913.16156pt x 681.29532pt>
+File: BaggedETS.png Graphic file (type png)
+<use BaggedETS.png>
+Package pdftex.def Info: BaggedETS.png  used on input line 263.
+(pdftex.def)             Requested size: 913.15933pt x 681.29366pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+[]\OT1/cmr/m/n/9 NIST/SEMATECH e-Handbook of Sta-tis-ti-cal Meth-ods,
+ []
+
+[10 <./BootstrappedSeries.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 279--281
+\OT1/cmr/m/n/9 al-ity, https://machinelearningmastery.com/decompose-time-series
+-data-trend-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--284
+[]\OT1/cmr/m/n/9 Seasonal De-com-po-si-tion Of Time Se-ries By Loess- De-com-po
+se a
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 281--284
+\OT1/cmr/m/n/9 time se-ries into sea-sonal, trend and ir-reg-u-lar com-po-nents
+ us-ing loess,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 290--292
+[]\OT1/cmr/m/n/9 Dealing with miss-ing val-ues and out-liers, https://otexts.co
+m/fpp2/missing-
+ []
+
+[11 <./BaggedETS.png>] (EnsembleMethods-LNCS.aux) ) 
 Here is how much of TeX's memory you used:
- 6258 strings out of 492973
- 88408 string characters out of 3135941
- 168574 words of memory out of 3000000
- 10036 multiletter control sequences out of 15000+200000
- 39233 words of font info for 78 fonts, out of 3000000 for 9000
+ 6401 strings out of 492973
+ 81855 string characters out of 3135941
+ 341001 words of memory out of 3000000
+ 10164 multiletter control sequences out of 15000+200000
+ 11117 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,40p,1039b,1140s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:
-/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
-utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Evolutionary-Computing-Natural-Selection.pdf (6 pages, 414648
- bytes).
+ 41i,9n,42p,800b,2345s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\hp\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0900.pk><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmtt9.pfb>
+Output written on EnsembleMethods-LNCS.pdf (11 pages, 385844 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
